@@ -1,5 +1,3 @@
-
-
 path_python_material = ".." # REPLACE WITH YOUR PATH
 model_id = "lr1"
 

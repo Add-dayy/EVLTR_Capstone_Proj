@@ -1,20 +1,23 @@
 
-
 import streamlit as st
 import requests
 
-st.title("Fraud Detection App")
+st.title("Loan App")
 
-transaction_amount = st.number_input("Transaction Amount")
-customer_age = st.number_input("Customer Age")
-customer_balance = st.number_input("Customer Balance")
+loan_amnt = st.number_input("Loan Amount")
+term_numeric = st.number_input("Loan Length (months)")
+annual_inc = st.number_input("Annual Income")
+emp_title = st.text_input("Employee Title")
+emp_length = st.number_input("Length of Employment (months)")
 
 if st.button("Predict"):
     response = requests.post("http://localhost:8502/predict/",
                              json={
-                                 "transaction_amount": transaction_amount,
-                                 "customer_age": customer_age,
-                                 "customer_balance": customer_balance
+                                 "loan_amnt": loan_amnt,
+                                 "term_numeric": term_numeric,
+                                 "annual_inc": annual_inc
+                                 "emp_title": emp_title,
+                                 "emp_length": emp_length
                              })
     result = response.json()
     
