@@ -1,0 +1,11 @@
+>>>TODOs:
+- Slides to introduce apps and streamlit concepts, and also architecture
+- Extra bits to add more functionality / visuals
+- Outdet git repo overview with 'accumulator concept' or near-real time design and considerations in production
+- Remove solutions and TODOs
+- Enrich with finance nuggets
+- Remove some Extra exercises (too much currently)
+- build a NN model using autoencoders using credit card fraud dataset. see thread called "TO USE IN CLASS 11" in Cgp.  See: https://www.comet.com/site/blog/credit-card-fraud-detection-with-autoencoders/
+    or: https://towardsdatascience.com/applying-anomaly-detection-with-autoencoders-to-fraud-detection-feaaee6b5b09
+  Or GANs?
+
